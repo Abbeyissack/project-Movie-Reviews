@@ -1,0 +1,31 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "username": "john_doe",
+            "password": "password123",
+            "email": "john_doe@example.com"
+        }
+    ],
+    "movies": [
+        {
+            "id": 1,
+            "title": "Inception",
+            "genre": "Sci-Fi"
+        },
+        {
+            "id": 2,
+            "title": "The Dark Knight",
+            "genre": "Action"
+        }
+    ],
+    "reviews": [
+        {
+            "id": 1,
+            "userId": 1,
+            "movieId": 1,
+            "text": "Amazing movie!",
+            "rating": 5
+        }
+    ]
+}

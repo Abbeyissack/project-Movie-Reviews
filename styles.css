@@ -1,0 +1,204 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+  }
+  
+  header {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  h1 {
+    margin-top: 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Search form */
+  #searchForm {
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  #searchInput:focus {
+    outline: none;
+    border-color: #666;
+  }
+  
+  #searchForm button {
+    padding: 8px 15px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #searchForm button:hover {
+    background-color: #333;
+  }
+  
+  /* Movie list */
+  #movieList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 20px);
+    min-width: 250px;
+  }
+  
+  .movie-item h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .movie-item p {
+    margin-bottom: 10px;
+  }
+  
+  /* Movie details */
+  #movieDetails {
+    margin-top: 20px;
+  }
+  
+  #reviewsList {
+    margin-top: 20px;
+  }
+  
+  .review {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid #666;
+  }
+  
+  .review h3 {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  
+  .review p {
+    margin-bottom: 5px;
+  }
+  
+  /* Add review form */
+  #addReviewForm {
+    margin-top: 20px;
+  }
+  
+  #addReviewForm h3 {
+    font-size: 18px;
+  }
+  
+  #addReviewForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  #addReviewForm textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  #addReviewForm button {
+    padding: 8px 15px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #addReviewForm button:hover {
+    background-color: #333;
+  }
+  
+  /* Forms */
+  .form-container {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+  }
+  
+  .form-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="password"],
+  .form-group textarea,
+  .form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+  }
+  
+  .form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #333;
+  }
