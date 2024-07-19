@@ -1,78 +1,94 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Review Website</title>
-    <link rel="stylesheet" href="styles.css">"> <!-- Replace with your CSS file -->
+    <title>Movie Management</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="user-profile.html">Profile</a></li>
-                <!-- Add more navigation links as needed -->
-            </ul>
-        </nav>
-        <h1>Movie Review Website</h1>
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Search movies...">
-            <button type="submit">Search</button>
-        </form>
-    </header>
-
-    <main>
-        <section id="movieList">
-            <!-- Dynamic content: List of movies -->
-            <!-- Example structure for each movie -->
-            <!-- Replace placeholders with dynamic data using JavaScript -->
-            <article class="movie-item">
-                <h2><a href="movie-details.html">Movie Title</a></h2>
-                <p>Genre: <span class="genre">Genre Name</span></p>
-                <!-- Add more details as needed -->
-                <!-- Dynamic content for reviews will be added here -->
-            </article>
-        </section>
-
-        <section id="movieDetails">
-            <!-- Dynamic content: Movie details -->
-            <h2>Movie Title</h2>
-            <p>Genre: <span class="genre">Genre Name</span></p>
-            <div id="reviewsList">
-                <!-- Dynamic content: List of reviews for the selected movie -->
-                <!-- Example structure for each review -->
-                <!-- Replace placeholders with dynamic data using JavaScript -->
-                <div class="review">
-                    <h3>User's Review</h3>
-                    <p>Rating: <span class="rating">5</span></p>
-                    <p>Review Text</p>
-                    <!-- Add more details as needed -->
-                </div>
+        <h1>Movie Management</h1>
+        <div id="formsContainer">
+            <!-- Create Movie Form -->
+            <div id="createMovieForm" class="form-container">
+                <h2>Create Movie</h2>
+                <form id="createMovie" autocomplete="off">
+                    <div class="form-group">
+                        <label for="movieTitle">Title</label>
+                        <input type="text" id="movieTitle" name="movieTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="moviePoster">Poster URL</label>
+                        <input type="text" id="moviePoster" name="moviePoster" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="movieDescription">Description</label>
+                        <input type="text" id="movieDescription" name="movieDescription">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieShowtime">Showtime</label>
+                        <input type="text" id="movieShowtime" name="movieShowtime">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieRuntime">Runtime</label>
+                        <input type="text" id="movieRuntime" name="movieRuntime">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieCapacity">Capacity</label>
+                        <input type="number" id="movieCapacity" name="movieCapacity">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieTicketsSold">Tickets Sold</label>
+                        <input type="number" id="movieTicketsSold" name="movieTicketsSold">
+                    </div>
+                    <button type="submit">Add Movie</button>
+                </form>
             </div>
-            <!-- Form to add a new review (for authenticated users) -->
-            <form id="addReviewForm">
-                <h3>Add Your Review</h3>
-                <label for="rating">Rating:</label>
-                <input type="number" id="rating" name="rating" min="1" max="5" required>
-                <textarea id="reviewText" name="reviewText" rows="4" cols="50" required></textarea>
-                <button type="submit">Submit Review</button>
-            </form>
-        </section>
-
-        <!-- Container for login and registration forms -->
-        <div id="formsContainer" class="container">
-            <!-- Forms will be dynamically added here -->
+            <!-- Edit Movie Form -->
+            <div id="editMovieForm" class="form-container" style="display: none;">
+                <h2>Edit Movie</h2>
+                <form id="editMovie" autocomplete="off">
+                    <input type="hidden" id="editMovieId">
+                    <div class="form-group">
+                        <label for="editMovieTitle">Title</label>
+                        <input type="text" id="editMovieTitle" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editMoviePoster">Poster URL</label>
+                        <input type="text" id="editMoviePoster" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="editMovieDescription">Description</label>
+                        <input type="text" id="editMovieDescription">
+                    </div>
+                    <div class="form-group">
+                        <label for="editMovieShowtime">Showtime</label>
+                        <input type="text" id="editMovieShowtime">
+                    </div>
+                    <div class="form-group">
+                        <label for="editMovieRuntime">Runtime</label>
+                        <input type="text" id="editMovieRuntime">
+                    </div>
+                    <div class="form-group">
+                        <label for="editMovieCapacity">Capacity</label>
+                        <input type="number" id="editMovieCapacity">
+                    </div>
+                    <div class="form-group">
+                        <label for="editMovieTicketsSold">Tickets Sold</label>
+                        <input type="number" id="editMovieTicketsSold">
+                    </div>
+                    <button type="submit">Update Movie</button>
+                </form>
+            </div>
         </div>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+        </div>
+        <ul id="movieList"></ul>
     </main>
-
-    <footer>
-        <p>&copy;  Movie Review Website 2024</p>
-    </footer>
-
-    <script src="index.js"></script> <!-- Replace with your JavaScript file -->
+    <script src="index.js"></script>
 </body>
-
 </html>

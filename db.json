@@ -1,31 +1,29 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "john_doe",
-            "password": "password123",
-            "email": "john_doe@example.com"
-        }
-    ],
     "movies": [
-        {
-            "id": 1,
-            "title": "Inception",
-            "genre": "Sci-Fi"
-        },
-        {
-            "id": 2,
-            "title": "The Dark Knight",
-            "genre": "Action"
-        }
+      {
+        "id": 1,
+        "title": "The Giant",
+        "image": "https://unsplash.com/photos/person-holding-black-and-green-portable-speaker-hB_WJo1xbUc",
+        "description": "An epic movie",
+        "showtime": "2024-07-22T19:00:00Z",
+        "runtime": "120 minutes",
+        "capacity": 100,
+        "ticketsSold": 50
+      }
     ],
-    "reviews": [
-        {
-            "id": 1,
-            "userId": 1,
-            "movieId": 1,
-            "text": "Amazing movie!",
-            "rating": 5
-        }
+    "users": [
+      {
+        "id": 1,
+        "username": "john_doe",
+        "email": "john_doe@example.com",
+        "password": "password123"
+      },
+      {
+        "id": 2,
+        "username": "jane_doe",
+        "email": "jane_doe@example.com",
+        "password": "password456"
+      }
     ]
-}
+  }
+  
